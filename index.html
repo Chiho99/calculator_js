@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculator</title>
+</head>
+<body onload="welcome()">
+  <header><h1 id="header" >Calculator</h1></header>  
+  <main>
+    <div class=" wrapper">
+    <div class="result_wrap">
+      <input id="result" readonly placeholder="000.000.000"></input>
+    </div>
+    <div class="num_wrap">
+      <table>
+        <tr>
+            <td class="seven"><button onclick="edit(this)" class="btn" id="seven">7</button></td>
+            <td class="eight"><button onclick="edit(this)" class="btn" id="eight">8</button></td>
+            <td class="nine"><button onclick="edit(this)" class="btn" id="nine">9</button></td>
+            <td class="×"><button onclick="edit(this)" class="btn" id="*">*</button></button></td>  
+        </tr>
+        <tr>
+            <td class="four"><button onclick="edit(this)" class="btn" id="four">4</button></td>
+            <td class="five"><button onclick="edit(this)" class="btn" id="five">5</button></td>
+            <td class="six"><button onclick="edit(this)" class="btn" id="six">6</button></td>
+            <td class="-"><button onclick="edit(this)" class="btn" id="-">-</button></td>  
+        </tr>
+        <tr>
+            <td class="one"><button onclick="edit(this)" class="btn" id="one">1</button></td>
+            <td class="two"><button onclick="edit(this)" class="btn" id="two">2</button></td>
+            <td class="three"><button onclick="edit(this)" class="btn" id="three">3</button></td>
+            <td class="+"><button onclick="edit(this)" class="btn" id="+">+</button></td>  
+        </tr>
+        <tr>
+            <td class="0"><button onclick="edit(this)" class="btn" id="zero">0</button></td>
+            <td class="."><button onclick="edit(this)" class="btn" id=".">.</button></td>
+            <td class="÷"><button onclick="edit(this)" class="btn" id="/">/</button></td>
+            <td class="="><button onclick="cal()" class="btn" id="=">=</button></td>
+        </tr>
+      </table>
+      <span>
+          <button onclick="reset()" class ="btn_ca" id="clear">clear</button>
+      </span>
+    </div>
+    </div>  
+  </main>
+  <footer></footer>
+  <script src="./assets/js/header.js" text="textstyle/javascript"></script>
+    <script src="./assets/js/main.js" text="textstyle/javascript"></script>
+</body>
+</html>
